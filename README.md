@@ -1,5 +1,17 @@
 # TidyData
 
+The R script, run_analysis.R, does the following:
+
+1) Download the dataset if it does not already exist in the working directory
+2) Load the activity and feature info
+3) Loads both the training and test datasets, keeping only those columns which reflect a mean or standard deviation
+4) Loads the activity and subject data for each dataset, and merges those columns with the dataset
+5) Merges the two datasets
+6) Converts the activity and subject columns into factors
+7) Creates a tidy dataset that consists of the average (mean) value of each variable for each subject and activity pair.
+8) The end result is shown in the file tidy_data.txt.
+
+
 This script uses the following files.
 1) features.txt - List of all features
 2) subject_test.txt - List of all subjects identified by a unique number
@@ -9,7 +21,6 @@ This script uses the following files.
 6) y_train.txt - Train Labels
 7) x_train.txt - Train data set
 8) activity_labels.txt - Links the class labels with their activity name
-
 
 Human Activity Recognition Using Smartphones Dataset
 Version 1.0
